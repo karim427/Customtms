@@ -6,7 +6,6 @@ const SocialProofSection = () => {
 
   const stats = [
     { val: "150+", label: "Apps Launched" },
-    { val: "$2B+", label: "Freight Managed" },
     { val: "12+", label: "Years in Business" },
     { val: "4.8/5", label: "Clutch Rating" },
   ];
