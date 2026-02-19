@@ -13,6 +13,7 @@ const clientLogos = [
   { name: "Hugo", src: hugoLogo },
   { name: "Yummy", src: yummyLogo },
   { name: "Glance", src: glanceLogo },
+  { name: "Allpronow", src: allpronowlogo },
 ];
 
 const ClientLogosSection = () => {
