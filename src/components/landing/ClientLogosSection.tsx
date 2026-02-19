@@ -4,6 +4,7 @@ import rapidoLogo from "@/assets/logos/Rapido.webp";
 import hugoLogo from "@/assets/logos/Hugo.webp";
 import yummyLogo from "@/assets/logos/Yummy.webp";
 import glanceLogo from "@/assets/logos/Glance.webp";
+import allpronow from "@/assets/logos/allpronow.png";
 
 const clientLogos = [
   { name: "Jio", src: jioLogo },
