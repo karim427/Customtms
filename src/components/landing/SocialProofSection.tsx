@@ -37,7 +37,7 @@ const SocialProofSection = () => {
         <span className="section-tag">Trusted Worldwide</span>
         <h2 className="section-title">Powering Network-Based Freight Businesses Across 30+ Countries</h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12 mb-16">
           {stats.map((s) => (
             <div key={s.label} className="bg-background rounded-xl p-6 card-shadow">
               <div className="text-3xl md:text-4xl font-bold text-primary font-heading">{s.val}</div>
