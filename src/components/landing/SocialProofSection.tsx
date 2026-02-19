@@ -44,7 +44,7 @@ const SocialProofSection = () => {
         {/* Section Header */}
         <span className="section-tag">Trusted Worldwide</span>
         <h2 className="section-title">
-          Powering Network-Based Freight Businesses Across 30+ Countries
+          Powering Businesses Across Countries
         </h2>
 
         {/* Stats Section */}
