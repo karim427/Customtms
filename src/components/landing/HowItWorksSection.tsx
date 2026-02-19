@@ -142,7 +142,7 @@ const HowItWorksSection = () => {
       >
         <div className="text-center mb-16">
           <span className="section-tag">The Process</span>
-          <h2 className="section-title">From Workshop to App Store — In 60 Days</h2>
+          <h2 className="section-title">From Idea to Launch in 60 days</h2>
           <p className="section-subtitle mx-auto">
             A proven process that takes you from idea to a live, branded TMS on the app stores — with AI-first marketing to grow your marketplace.
           </p>
