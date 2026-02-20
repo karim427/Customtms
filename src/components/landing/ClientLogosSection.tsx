@@ -4,7 +4,7 @@ import rapidoLogo from "@/assets/logos/Rapido.webp";
 import hugoLogo from "@/assets/logos/Hugo.webp";
 import yummyLogo from "@/assets/logos/Yummy.webp";
 import glanceLogo from "@/assets/logos/Glance.webp";
-import allpronow from "@/assets/logos/allpronow.png";
+import allpronowLogo from "@/assets/logos/allpronow.png";
 
 const clientLogos = [
   { name: "Jio", src: jioLogo },
@@ -13,7 +13,7 @@ const clientLogos = [
   { name: "Hugo", src: hugoLogo },
   { name: "Yummy", src: yummyLogo },
   { name: "Glance", src: glanceLogo },
-  { name: "Allpronow", src: allpronowlogo },
+  { name: "AllProNow", src: allpronowLogo },
 ];
 
 const ClientLogosSection = () => {
