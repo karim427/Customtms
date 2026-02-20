@@ -6,7 +6,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import addressBookImage from "@/assets/images/address-book.webp";
 import assignLoadsImage from "@/assets/images/assign-loads.webp";
 import centralDashboardImage from "@/assets/images/central-dashboard.webp";
-import leadCreationImage from "@/assets/images/lead-creation.webp";
+import leadCreationImage from "@/assets/images/load-creation.webp";
 import digitalPodImage from "@/assets/images/digitalpod.webp";
 import selfServiceImage from "@/assets/images/self-service.webp";
 import liveShipmentImage from "@/assets/images/live-shipment.webp";
