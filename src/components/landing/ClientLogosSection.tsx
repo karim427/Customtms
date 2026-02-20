@@ -1,10 +1,11 @@
 import jioLogo from "@/assets/logos/Jio.webp";
 import siemensLogo from "@/assets/logos/siemens.webp";
 import rapidoLogo from "@/assets/logos/Rapido.webp";
+import allpronowLogo from "@/assets/logos/allpronow.webp";
 import hugoLogo from "@/assets/logos/Hugo.webp";
 import yummyLogo from "@/assets/logos/Yummy.webp";
 import glanceLogo from "@/assets/logos/Glance.webp";
-import allpronowLogo from "@/assets/logos/allpronow.png";
+
 
 const clientLogos = [
   { name: "Jio", src: jioLogo },
