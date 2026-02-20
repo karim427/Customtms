@@ -6,28 +6,27 @@ import hugoLogo from "@/assets/logos/Hugo.webp";
 import yummyLogo from "@/assets/logos/Yummy.webp";
 import glanceLogo from "@/assets/logos/Glance.webp";
 
-
 const clientLogos = [
   { name: "Jio", src: jioLogo },
   { name: "Siemens", src: siemensLogo },
   { name: "Rapido", src: rapidoLogo },
+  { name: "AllProNow", src: allpronowLogo }, // keep this in middle (4th)
   { name: "Hugo", src: hugoLogo },
   { name: "Yummy", src: yummyLogo },
   { name: "Glance", src: glanceLogo },
-  { name: "AllProNow", src: allpronowLogo },
 ];
 
 const ClientLogosSection = () => {
   return (
     <section className="bg-white py-10 md:py-12">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-center gap-8 md:gap-16 items-center">
+        <div className="flex justify-between items-center overflow-x-auto">
           {clientLogos.map(({ name, src }) => (
             <img
               key={name}
               src={src}
               alt={name}
-              className="h-8 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              className="h-10 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity flex-shrink-0"
             />
           ))}
         </div>
