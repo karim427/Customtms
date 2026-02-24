@@ -2,9 +2,8 @@ import { ArrowRight, Play, CheckCircle } from "lucide-react";
 
 const HeroSection = () => {
   const stats = [
-    "150+ Businesses Launched",
-    "30+ Countries",
-    "12+ Years",
+    "AI Enhansed features",
+    "Customizable Mobile app",
     "100% Source Code Ownership",
   ];
 
