@@ -85,7 +85,7 @@ const AppShowcaseSection = () => {
       >
         <div className="text-center mb-16">
           <span className="section-tag">Mobile Platform</span>
-          <h2 className="section-title">Native iOS & Android Apps for Every Stakeholder</h2>
+          <h2 className="section-title">Native iOS & Android Mobile Apps for Every Stakeholder</h2>
           <p className="section-subtitle mx-auto">Fleet management happens in the field. Our native mobile apps ensure shippers, carriers, and fleet operators stay connected — from anywhere.</p>
         </div>
 
