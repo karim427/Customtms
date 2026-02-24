@@ -1,25 +1,38 @@
-import { Shield, Users, Zap, Code, Cloud, Container, Server, Database } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiSwift,
+  SiKotlin,
+  SiNodedotjs,
+  SiGo,
+  SiPostgresql,
+  SiRedis,
+  SiElasticsearch,
+  SiAmazonaws,
+  SiDocker,
+  SiKubernetes,
+  SiCloudflare,
+} from "react-icons/si";
 
-const techBadges = [
-  { label: "Native iOS (Swift)", category: "mobile" },
-  { label: "Native Android (Kotlin)", category: "mobile" },
-  { label: "Node.js", category: "backend" },
-  { label: "GoLang", category: "backend" },
-  { label: "MongoDB", category: "db" },
-  { label: "Cassandra", category: "db" },
-  { label: "Redis", category: "db" },
-  { label: "Kubernetes", category: "infra" },
-  { label: "Docker", category: "infra" },
-];
+const techStack = [
+  { name: "React.js", icon: SiReact },
+  { name: "Next.js", icon: SiNextdotjs },
 
-const reassurance = [
-  { icon: Shield, label: "99.9% Uptime SLA" },
-  { icon: Users, label: "10K+ Concurrent Users" },
-  { icon: Zap, label: "Sub-Second Tracking" },
-  { icon: Code, label: "API-First Architecture" },
-  { icon: Cloud, label: "Cloud Agnostic" },
-  { icon: Container, label: "Kubernetes Native" },
+  { name: "Swift (iOS)", icon: SiSwift },
+  { name: "Kotlin (Android)", icon: SiKotlin },
+
+  { name: "Node.js", icon: SiNodedotjs },
+  { name: "Go", icon: SiGo },
+
+  { name: "PostgreSQL", icon: SiPostgresql },
+  { name: "Redis", icon: SiRedis },
+  { name: "Elasticsearch", icon: SiElasticsearch },
+
+  { name: "AWS", icon: SiAmazonaws },
+  { name: "Docker", icon: SiDocker },
+  { name: "Kubernetes", icon: SiKubernetes },
+  { name: "Cloudflare", icon: SiCloudflare },
 ];
 
 const TechStackSection = () => {
@@ -29,32 +42,40 @@ const TechStackSection = () => {
     <section className="section-padding bg-section-alt">
       <div
         ref={ref}
-        className={`container mx-auto text-center transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+        className={`container mx-auto text-center transition-all duration-700 ${
+          isVisible
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-8"
+        }`}
       >
-        <span className="section-tag">Technology</span>
-        <h2 className="section-title">Infrastructure That Grows With Your Network</h2>
-        <p className="section-subtitle mx-auto mb-10">
-          Cloud-agnostic architecture built on Kubernetes. Deploy on AWS, GCP, Azure, or keep it standalone on your own infrastructure — no vendor lock-in, no replatforming.
+        <span className="section-tag">Technology Stack</span>
+
+        <h2 className="section-title">
+          Built on Modern, Scalable Architecture
+        </h2>
+
+        <p className="section-subtitle mx-auto mb-12 max-w-3xl">
+          Enterprise-grade infrastructure built for real-time freight
+          dispatch, fleet coordination, and AI-powered load matching.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {techBadges.map((t) => (
-            <span key={t.label} className="bg-background border border-border text-foreground px-4 py-2 rounded-full text-sm font-medium card-shadow">
-              {t.label}
-            </span>
-          ))}
-        </div>
+        <div className="flex flex-wrap justify-center gap-5 max-w-5xl mx-auto">
+          {techStack.map((tech) => {
+            const Icon = tech.icon;
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
-          {reassurance.map((r) => (
-            <div key={r.label} className="bg-background rounded-xl p-5 card-shadow">
-              <r.icon className="w-8 h-8 text-accent mx-auto mb-2" />
-              <div className="text-sm font-semibold text-primary">{r.label}</div>
-            </div>
-          ))}
+            return (
+              <div
+                key={tech.name}
+                className="flex items-center gap-3 bg-background border border-border px-6 py-3 rounded-full card-shadow"
+              >
+                <Icon className="text-xl text-accent" />
+                <span className="text-sm font-medium text-foreground">
+                  {tech.name}
+                </span>
+              </div>
+            );
+          })}
         </div>
-
-        <p className="text-sm italic text-muted-foreground mt-8">Deploy anywhere. Your servers. Your rules. Forward this to your CTO — they'll approve.</p>
       </div>
     </section>
   );
