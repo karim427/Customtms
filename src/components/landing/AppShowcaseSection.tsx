@@ -11,7 +11,7 @@ const apps = [
     tagBg: "bg-secondary/10 text-secondary",
     label: "Shipper Mobile App",
     title: "Shipper App — Book, Track & Pay On the Go",
-    body: "A native iOS & Android app for shippers to self-serve — book loads, track shipments in real-time, and manage invoices. Fewer calls to dispatch, faster bookings, better visibility.",
+    body: "A native iOS & Android Mobile app for shippers to self-serve — book loads, track shipments in real-time, and manage invoices. Fewer calls to dispatch, faster bookings, better visibility.",
     bullets: [
       { heading: "Self-Serve Load Booking", desc: "Shippers book loads and get instant rate estimates from their phone" },
       { heading: "Live GPS Tracking", desc: "Real-time shipment visibility with ETA updates and push notifications" },
