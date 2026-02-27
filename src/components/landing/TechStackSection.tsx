@@ -1,16 +1,23 @@
 import { Shield, Users, Zap, Code, Cloud, Container } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
-const techBadges = [
+const topRowTech = [
   { label: "Swift", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" },
   { label: "Kotlin", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" },
   { label: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
   { label: "Golang", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" },
+
+  // ✅ Isometrik inserted here
+  { label: "Isometrik", icon: "/icons/isometrik.svg" },
+
   { label: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
   { label: "Cassandra", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachecassandra/apachecassandra-original.svg" },
   { label: "Redis", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
-  { label: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
+];
+
+const bottomRowTech = [
   { label: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  { label: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
 ];
 
 const reassurance = [
@@ -44,12 +51,31 @@ const TechStackSection = () => {
           Azure, or your own infrastructure — no vendor lock-in.
         </p>
 
-        {/* Tech Pills */}
-        <div className="flex flex-wrap justify-center gap-6 mb-16">
-          {techBadges.map((tech) => (
+        {/* Top Row */}
+        <div className="flex flex-wrap justify-center gap-6 mb-6 max-w-6xl mx-auto">
+          {topRowTech.map((tech) => (
             <div
               key={tech.label}
-              className="flex items-center gap-3 px-6 py-3 bg-background rounded-full shadow-sm hover:shadow-md transition"
+              className="flex items-center gap-3 px-6 py-3 bg-background rounded-full shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                src={tech.icon}
+                alt={tech.label}
+                className="w-6 h-6 object-contain"
+              />
+              <span className="font-medium text-primary">
+                {tech.label}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom Row (Docker + Kubernetes centered) */}
+        <div className="flex justify-center gap-6 mb-16">
+          {bottomRowTech.map((tech) => (
+            <div
+              key={tech.label}
+              className="flex items-center gap-3 px-6 py-3 bg-background rounded-full shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 src={tech.icon}
