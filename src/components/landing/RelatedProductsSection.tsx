@@ -2,10 +2,10 @@ import { Package, Truck, Zap } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const products = [
-  { emoji: "📦", title: "Digital Freight Broker & Load Board", desc: "A digital load board on Web, iOS and Android with integrated TMS." },
-  { emoji: "🚚", title: "White-Label Truck Booking App", desc: "A fully branded truck booking platform. Think Uber, but for freight." },
-  { emoji: "🏃", title: "On-Demand Delivery Platform", desc: "Manage last-mile deliveries with a customizable delivery app." },
-  { emoji: "⚡", title: "Super App Platform", desc: "Combine transport, delivery, and services in one multi-service super app." },
+  { emoji: "📦", title: "Transport Management System", desc: "Real-time TMS for smart dispatch, routing, and tracking., url:https://appscrip.com/transportation-management-system/" },
+  { emoji: "🚚", title: "White-Label Truck Booking App", desc: "A fully branded truck booking platform. Think Uber, but for freight., url:https://appscrip.com/white-label-truck-booking-app-development/" },
+  { emoji: "🏃", title: "On-Demand Delivery Platform", desc: "Manage last-mile deliveries with a customizable delivery app., url:https://appscrip.com/on-demand-services-marketplace/" },
+  { emoji: "⚡", title: "Super App Platform", desc: "Combine transport, delivery, and services in one multi-service super app., url:https://appscrip.com/super-app-development/" },
 ];
 
 const RelatedProductsSection = () => {

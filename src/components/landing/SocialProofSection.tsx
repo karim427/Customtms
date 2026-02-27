@@ -13,21 +13,21 @@ const SocialProofSection = () => {
   const testimonials = [
     {
       quote:
-        "We went from idea to live platform in under 90 days. Appscrip gave us a TMS that works exactly how our business operates.",
-      name: "James K.",
-      role: "Freight Aggregator, USA 🇺🇸",
+        "Appscrip has standout strengths, including its highly capable iOS and back-end teams, strong leadership, and a solid foundation, making it a reliable technology partner.",
+      name: "Scott",
+      role: "Founder, Fero, USA 🇺🇸",
     },
     {
       quote:
-        "The source code ownership was the deciding factor. Appscrip was the only one that gave us a pre-built base we could fully own.",
-      name: "Ahmed R.",
-      role: "Fleet Operator, UAE 🇦🇪",
+        "Appscrip's truck management app has streamlined my freight business with its ease of use and innovation. Their reliability and focus on industry trends set them apart.",
+      name: "Mlog.",
+      role: "Founder, Mlog, USA 🇺🇸",
     },
     {
       quote:
-        "I'm a non-tech founder. Their team understood our business first, then built the tech around it. Our driver app is a game-changer.",
-      name: "Priya S.",
-      role: "Logistics Startup, Singapore 🇸🇬",
+        "Working with Appscrip on a cargo shipping app has been great. Their responsive team and skilled developers made the process smooth and effective. I look forward to continuing our partnership!",
+      name: "Alexi",
+      role: "Founder, Loadsonar",
     },
   ];
 
