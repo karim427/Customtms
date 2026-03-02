@@ -34,7 +34,6 @@ const TechStackSection = () => {
           Enterprise-grade technology powering a high-performance logistics platform.
         </p>
 
-        {/* PROPER GRID ALIGNMENT */}
         <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
           {techStack.map((tech) => (
             <div
